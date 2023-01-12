@@ -33,6 +33,11 @@ main {
   gap: 3.188rem;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .photo-description__title {
   margin: 0;
 }
