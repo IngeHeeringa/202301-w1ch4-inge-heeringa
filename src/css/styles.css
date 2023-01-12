@@ -1,0 +1,75 @@
+@import url("../../node_modules/@fontsource/nunito/400.css");
+@import url("../../node_modules/@fontsource/nunito/800.css");
+
+:root {
+  --color-primary: #181818;
+  --color-accent: #ed6435;
+  --font-primary: "Nunito", sans-serif;
+  --padding-section: 0 3rem;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--padding-section);
+}
+
+.button {
+  text-transform: uppercase;
+  border-radius: 0 2rem 2rem 2rem;
+  border: none;
+  background-color: var(--color-accent);
+  color: #fff;
+  padding: 0.75rem 1.2rem;
+  width: fit-content;
+  height: fit-content;
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+}
+
+.activities-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-container__title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: var(--color-accent);
+  margin: 1.875rem 0;
+}
+
+.title-container__subtitle {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    text-align: center;
+  }
+
+  .activities-info {
+    flex-direction: column;
+    height: 14rem;
+  }
+}
